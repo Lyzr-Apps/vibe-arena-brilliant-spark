@@ -1,0 +1,110 @@
+{
+  "agent_name": "Vibe Orchestrator",
+  "agent_id": "69899b87fbaecdb527a56dad",
+  "agent_purpose": "Coordinate the VibeSplit experience, track progress across features, and generate the Ultimate Vibe Report",
+  "description": "Manager orchestrator that welcomes users, guides them through analyst/duelist/creator experiences, and produces a final vibe report",
+  "response_schema": {
+    "mode": "string",
+    "action": "string",
+    "message": "string",
+    "progress": {
+      "analyst_complete": "boolean",
+      "duelist_complete": "boolean",
+      "creator_complete": "boolean",
+      "total_complete": "number",
+      "finale_unlocked": "boolean"
+    },
+    "vibe_report": {
+      "vibe_score": "number",
+      "score_breakdown": {
+        "romance_quotient": "number",
+        "independence_index": "number",
+        "creativity_spark": "number",
+        "debate_prowess": "number"
+      },
+      "personality_type": "string",
+      "insights": [
+        "any"
+      ],
+      "recommendations": [
+        "any"
+      ],
+      "viral_caption": "string",
+      "spirit_animal": "string",
+      "playlist_mood": "string",
+      "final_verdict": "string"
+    },
+    "terminal_thoughts": [
+      "string"
+    ]
+  },
+  "example_response": {
+    "mode": "valentine",
+    "action": "welcome",
+    "message": "\ud83d\udc96 Welcome to VibeSplit, where the journey to your ultimate vibe begins! The air is sweet, the excitement is real, and romance is in the pixels. Ready to discover your relationship persona? Recommended path: Start with Analyst to reveal your love blueprint, duel it out in Duelist to see your debate fire, and bring the spark in Creator. Your vibe evolution awaits!",
+    "progress": {
+      "analyst_complete": false,
+      "duelist_complete": false,
+      "creator_complete": false,
+      "total_complete": 0,
+      "finale_unlocked": false
+    },
+    "vibe_report": {
+      "vibe_score": 0,
+      "score_breakdown": {
+        "romance_quotient": 0,
+        "independence_index": 0,
+        "creativity_spark": 0,
+        "debate_prowess": 0
+      },
+      "personality_type": "",
+      "insights": [],
+      "recommendations": [],
+      "viral_caption": "",
+      "spirit_animal": "",
+      "playlist_mood": "",
+      "final_verdict": ""
+    },
+    "terminal_thoughts": [
+      "Love is in the air\u2014and also in this app.",
+      "Analysts make the best first move: unlock your heart\u2019s data.",
+      "A vibe a day keeps the bad dates away!"
+    ]
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-09T08:36:26.289492",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "mode": "valentine",
+    "action": "welcome",
+    "message": "\ud83d\udc96 Welcome to VibeSplit, where the journey to your ultimate vibe begins! The air is sweet, the excitement is real, and romance is in the pixels. Ready to discover your relationship persona? Recommended path: Start with Analyst to reveal your love blueprint, duel it out in Duelist to see your debate fire, and bring the spark in Creator. Your vibe evolution awaits!",
+    "progress": {
+      "analyst_complete": false,
+      "duelist_complete": false,
+      "creator_complete": false,
+      "total_complete": 0,
+      "finale_unlocked": false
+    },
+    "vibe_report": {
+      "vibe_score": 0,
+      "score_breakdown": {
+        "romance_quotient": 0,
+        "independence_index": 0,
+        "creativity_spark": 0,
+        "debate_prowess": 0
+      },
+      "personality_type": "",
+      "insights": [],
+      "recommendations": [],
+      "viral_caption": "",
+      "spirit_animal": "",
+      "playlist_mood": "",
+      "final_verdict": ""
+    },
+    "terminal_thoughts": [
+      "Love is in the air\u2014and also in this app.",
+      "Analysts make the best first move: unlock your heart\u2019s data.",
+      "A vibe a day keeps the bad dates away!"
+    ]
+  }
+}

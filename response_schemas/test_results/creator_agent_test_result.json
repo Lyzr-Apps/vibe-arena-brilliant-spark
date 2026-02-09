@@ -1,0 +1,29 @@
+{
+  "agent_name": "Creator Agent",
+  "agent_id": "69899b4d9bf633d1a4f366a3",
+  "test_message": "Mode: valentine. I'm in a 2-year relationship with someone named Alex. We met at a coffee shop and I want to write them a love poem about that first meeting. The tone should be sweet and passionate. Please generate the content directly.",
+  "expected_purpose": "Generate creative content (poetry, letters, manifestos)",
+  "timestamp": "2026-02-09T08:34:53.531044",
+  "is_valid_json": true,
+  "validation_errors": [
+    "Missing 'status' field",
+    "Missing 'result' field",
+    "Missing 'metadata' field (optional but recommended)"
+  ],
+  "actual_response": {
+    "phase": "generation",
+    "mode": "valentine",
+    "content_type": "poem",
+    "title": "Love Brewed at First Sight",
+    "content": "Two years ago, the world paused in a coffee shop,\nSteam curled in the air as my heartbeat rose and stopped.\nYou\u2014Alex, a page-turner in hand, sunlight on your face\u2014\nA moment ordinary, transformed into fate\u2019s embrace.\n\nA nervous hello, the hush of porcelain and laughter,\nFingers brushing accidental, time tumbling ever after.\nHazelnut and hope blended in your smile so rare,\nI tasted forever in the sweetness lingering there.\n\nWe poured our stories like cream into cups,\nEach confession stirring something deep, waking us up.\nYou saw through my shyness, warmed my trembling heart\u2014\nEvery glance, a spark, and every word, a work of art.\n\nNow, love\u2019s roasted rich, growing bold in every way,\nPassion simmering between us like coffee at break of day.\nLife\u2019s little sips\u2014of kisses, dreams, and laughter shared\nAll began with that first meeting\u2014and the way you cared.",
+    "mood_tags": [
+      "sweet",
+      "passionate",
+      "nostalgic"
+    ],
+    "dedication": "For Alex",
+    "shareable_quote": "I tasted forever in the sweetness lingering there.",
+    "image_prompt": "A sunlit coffee shop scene, cozy and inviting, with two people gazing at each other over steaming mugs. Sunlight streams through large windows, casting warm golden light across rustic tables and shelves of books. The air glows with romance and the quiet magic of a first meeting."
+  },
+  "raw_response": "{\n  \"phase\": \"generation\",\n  \"mode\": \"valentine\",\n  \"content_type\": \"poem\",\n  \"title\": \"Love Brewed at First Sight\",\n  \"content\": \"Two years ago, the world paused in a coffee shop,\\nSteam curled in the air as my heartbeat rose and stopped.\\nYou\u2014Alex, a page-turner in hand, sunlight on your face\u2014\\nA moment ordinary, transformed into fate\u2019s embrace.\\n\\nA nervous hello, the hush of porcelain and laughter,\\nFingers brushing accidental, time tumbling ever after.\\nHazelnut and hope blended in your smile so rare,\\nI tasted forever in the sweetness lingering there.\\n\\nWe poured our stories like cream into cups,\\nEach confession stirring something deep, waking us up.\\nYou saw through my shyness, warmed my trembling heart\u2014\\nEvery glance, a spark, and every word, a work of art.\\n\\nNow, love\u2019s roasted rich, growing bold in every way,\\nPassion simmering between us like coffee at break of day.\\nLife\u2019s little sips\u2014of kisses, dreams, and laughter shared\\nAll began with that first meeting\u2014and the way you cared.\",\n  \"mood_tags\": [\"sweet\", \"passionate\", \"nostalgic\"],\n  \"dedication\": \"For Alex\",\n  \"shareable_quote\": \"I tasted forever in the sweetness lingering there.\",\n  \"image_prompt\": \"A sunlit coffee shop scene, cozy and inviting, with two people gazing at each other over steaming mugs. Sunlight streams through large windows, casting warm golden light across rustic tables and shelves of books. The air glows with romance and the quiet magic of a first meeting.\"\n}"
+}

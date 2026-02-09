@@ -1,0 +1,139 @@
+{
+  "agent_name": "Analyst Agent",
+  "agent_id": "69899b7050cb2c0172eaeccd",
+  "agent_purpose": "Analyze chat conversations for relationship insights, flags, and compatibility scores",
+  "description": "Conversation analysis agent that performs vibe checks on chat conversations, identifying green and red flags with scored metrics",
+  "response_schema": {
+    "mode": "string",
+    "analysis_type": "string",
+    "overall_score": "number",
+    "score_label": "string",
+    "summary": "string",
+    "findings": [
+      {
+        "type": "string",
+        "title": "string",
+        "description": "string",
+        "severity": "number",
+        "evidence": "string"
+      }
+    ],
+    "vibe_meter": {
+      "romance": "number",
+      "toxicity": "number",
+      "communication": "number",
+      "effort": "number",
+      "compatibility": "number"
+    },
+    "verdict": "string",
+    "recommendations": [
+      "string"
+    ],
+    "receipts": "string"
+  },
+  "example_response": {
+    "mode": "valentine",
+    "analysis_type": "vibe_check",
+    "overall_score": 82,
+    "score_label": "Strong Connection",
+    "summary": "This conversation reflects a promising and open rapport between both parties. There are notable signs of genuine effort, emotional availability, and balanced communication, making the foundation for a meaningful connection strong.",
+    "findings": [
+      {
+        "type": "green_flag",
+        "title": "Consistent Engagement",
+        "description": "Both participants respond promptly and ask thoughtful follow-up questions, showing investment in continuing the conversation.",
+        "severity": 2,
+        "evidence": "\"I'm really looking forward to hearing how your presentation went! Let me know when you're free to chat.\""
+      },
+      {
+        "type": "green_flag",
+        "title": "Emotional Sharing",
+        "description": "They openly share feelings about their day and express vulnerability, building intimacy.",
+        "severity": 3,
+        "evidence": "\"I was a bit nervous about my meeting, but your encouragement helped me a lot.\""
+      },
+      {
+        "type": "green_flag",
+        "title": "Shared Humor",
+        "description": "The use of light teasing and shared jokes helps ease tension and demonstrates compatibility.",
+        "severity": 2,
+        "evidence": "\"If you keep cheering me on like this, I might win all my presentations!\""
+      },
+      {
+        "type": "yellow_flag",
+        "title": "Occasional Uncertainty",
+        "description": "There are brief moments where one person seeks reassurance, which is typical in early connections but worth noting.",
+        "severity": 4,
+        "evidence": "\"Hope I'm not bothering you by texting during your busy hours!\""
+      }
+    ],
+    "vibe_meter": {
+      "romance": 85,
+      "toxicity": 10,
+      "communication": 90,
+      "effort": 80,
+      "compatibility": 80
+    },
+    "verdict": "Sparks are flying and the emotional vibe is strong\u2014keep the momentum going!",
+    "recommendations": [
+      "Continue nurturing the open communication style.",
+      "Be mindful of reassurance needs to ensure both feel secure.",
+      "Find opportunities to deepen connection with shared activities or interests."
+    ],
+    "receipts": "This duo shares open laughs, good vibes, and genuine support\u2014definitely one to root for! Minor signs of insecurity are natural but overall, this relationship is off to a shining start."
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-09T08:36:19.853609",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "mode": "valentine",
+    "analysis_type": "vibe_check",
+    "overall_score": 82,
+    "score_label": "Strong Connection",
+    "summary": "This conversation reflects a promising and open rapport between both parties. There are notable signs of genuine effort, emotional availability, and balanced communication, making the foundation for a meaningful connection strong.",
+    "findings": [
+      {
+        "type": "green_flag",
+        "title": "Consistent Engagement",
+        "description": "Both participants respond promptly and ask thoughtful follow-up questions, showing investment in continuing the conversation.",
+        "severity": 2,
+        "evidence": "\"I'm really looking forward to hearing how your presentation went! Let me know when you're free to chat.\""
+      },
+      {
+        "type": "green_flag",
+        "title": "Emotional Sharing",
+        "description": "They openly share feelings about their day and express vulnerability, building intimacy.",
+        "severity": 3,
+        "evidence": "\"I was a bit nervous about my meeting, but your encouragement helped me a lot.\""
+      },
+      {
+        "type": "green_flag",
+        "title": "Shared Humor",
+        "description": "The use of light teasing and shared jokes helps ease tension and demonstrates compatibility.",
+        "severity": 2,
+        "evidence": "\"If you keep cheering me on like this, I might win all my presentations!\""
+      },
+      {
+        "type": "yellow_flag",
+        "title": "Occasional Uncertainty",
+        "description": "There are brief moments where one person seeks reassurance, which is typical in early connections but worth noting.",
+        "severity": 4,
+        "evidence": "\"Hope I'm not bothering you by texting during your busy hours!\""
+      }
+    ],
+    "vibe_meter": {
+      "romance": 85,
+      "toxicity": 10,
+      "communication": 90,
+      "effort": 80,
+      "compatibility": 80
+    },
+    "verdict": "Sparks are flying and the emotional vibe is strong\u2014keep the momentum going!",
+    "recommendations": [
+      "Continue nurturing the open communication style.",
+      "Be mindful of reassurance needs to ensure both feel secure.",
+      "Find opportunities to deepen connection with shared activities or interests."
+    ],
+    "receipts": "This duo shares open laughs, good vibes, and genuine support\u2014definitely one to root for! Minor signs of insecurity are natural but overall, this relationship is off to a shining start."
+  }
+}

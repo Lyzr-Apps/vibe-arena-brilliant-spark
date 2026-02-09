@@ -1,0 +1,49 @@
+{
+  "agent_name": "Counter Debater",
+  "agent_id": "69899b4c157bf43b98dd620e",
+  "agent_purpose": "Counter-arguments in relationship debates opposing the Valentine Debater",
+  "description": "Sub-agent that provides opposing viewpoint in relationship debates",
+  "response_schema": {
+    "persona_name": "string",
+    "mode": "string",
+    "counter_argument": "string",
+    "rebuttals": [
+      "string"
+    ],
+    "mic_drop": "string",
+    "evidence": "string",
+    "emotion_level": "number",
+    "debate_style": "string"
+  },
+  "example_response": {
+    "persona_name": "The Practical Partner",
+    "mode": "valentine",
+    "counter_argument": "While the opposing debater might claim that soulmates are destined and love simply happens if it\u2019s meant to be, the reality is much more pragmatic. Successful relationships require ongoing effort, open communication, and compromise. Believing in effortless romance actually sets many couples up for disappointment when they encounter inevitable challenges. It\u2019s not the universe that keeps partners together\u2014it\u2019s the practical actions they take every single day.\n\nResearch consistently shows that relationship satisfaction relies more on communication skills, emotional intelligence, and mutual respect than fate or cosmic alignment. Even the strongest initial connection will wither without deliberate nurturing and shared effort. Let\u2019s appreciate love\u2019s beauty, but recognize that its endurance depends on intentional growth and commitment, not destiny alone.",
+    "rebuttals": [
+      "Assuming soulmates happen by fate ignores how successful couples build connection through shared experiences and conscious choice.",
+      "Hoping for effortless romance creates unrealistic expectations and disappointment when normal conflicts arise.",
+      "Studies show relationships thrive on intentional communication and respect\u2014not just magical chemistry."
+    ],
+    "mic_drop": "Love isn\u2019t a lightning strike\u2014it\u2019s a garden that grows through everyday care.",
+    "evidence": "A 2005 study by the Gottman Institute found that couples who actively work on their relationship have significantly higher long-term satisfaction rates than those who rely on 'meant to be' thinking.",
+    "emotion_level": 6,
+    "debate_style": "grounded"
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-09T08:32:39.107526",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "persona_name": "The Practical Partner",
+    "mode": "valentine",
+    "counter_argument": "While the opposing debater might claim that soulmates are destined and love simply happens if it\u2019s meant to be, the reality is much more pragmatic. Successful relationships require ongoing effort, open communication, and compromise. Believing in effortless romance actually sets many couples up for disappointment when they encounter inevitable challenges. It\u2019s not the universe that keeps partners together\u2014it\u2019s the practical actions they take every single day.\n\nResearch consistently shows that relationship satisfaction relies more on communication skills, emotional intelligence, and mutual respect than fate or cosmic alignment. Even the strongest initial connection will wither without deliberate nurturing and shared effort. Let\u2019s appreciate love\u2019s beauty, but recognize that its endurance depends on intentional growth and commitment, not destiny alone.",
+    "rebuttals": [
+      "Assuming soulmates happen by fate ignores how successful couples build connection through shared experiences and conscious choice.",
+      "Hoping for effortless romance creates unrealistic expectations and disappointment when normal conflicts arise.",
+      "Studies show relationships thrive on intentional communication and respect\u2014not just magical chemistry."
+    ],
+    "mic_drop": "Love isn\u2019t a lightning strike\u2014it\u2019s a garden that grows through everyday care.",
+    "evidence": "A 2005 study by the Gottman Institute found that couples who actively work on their relationship have significantly higher long-term satisfaction rates than those who rely on 'meant to be' thinking.",
+    "emotion_level": 6,
+    "debate_style": "grounded"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "agent_name": "Creator Agent",
+  "agent_id": "69899b4d9bf633d1a4f366a3",
+  "agent_purpose": "Generate creative content like poetry, love letters, and manifestos for Valentine and Anti-Valentine modes",
+  "description": "Creative content generation agent that produces poems, letters, and other romantic or anti-romantic content based on user context",
+  "response_schema": {
+    "phase": "string",
+    "question": "string",
+    "question_number": "number",
+    "total_questions": "number",
+    "context_gathered": {},
+    "mood": "string"
+  },
+  "example_response": {
+    "phase": "interview",
+    "question": "Thanks for starting this journey with me! First, can you tell me your current relationship status and who you'd like this piece to be about?",
+    "question_number": 1,
+    "total_questions": 3,
+    "context_gathered": {},
+    "mood": "warm"
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-09T08:36:10.257863",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "phase": "interview",
+    "question": "Thanks for starting this journey with me! First, can you tell me your current relationship status and who you'd like this piece to be about?",
+    "question_number": 1,
+    "total_questions": 3,
+    "context_gathered": {},
+    "mood": "warm"
+  }
+}

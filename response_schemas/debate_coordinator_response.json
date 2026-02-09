@@ -1,0 +1,109 @@
+{
+  "agent_name": "Debate Coordinator",
+  "agent_id": "69899b70157bf43b98dd6213",
+  "agent_purpose": "Orchestrate relationship debates between two AI debaters with structured rounds, arguments, and verdicts",
+  "description": "Manager agent that coordinates Valentine/Anti-Valentine debate sessions with two AI debaters arguing opposing positions on relationship topics",
+  "response_schema": {
+    "mode": "string",
+    "topic": "string",
+    "status": "string",
+    "round": "number",
+    "total_rounds": "number",
+    "introduction": "string",
+    "debater_a": {
+      "name": "string",
+      "argument": "string",
+      "key_points": [
+        "string"
+      ],
+      "emotion_level": "number"
+    },
+    "debater_b": {
+      "name": "string",
+      "argument": "string",
+      "rebuttals": [
+        "string"
+      ],
+      "emotion_level": "number"
+    },
+    "round_summary": "string",
+    "verdict": {
+      "winner": "string",
+      "reasoning": "string",
+      "final_score": "string",
+      "audience_takeaway": "string"
+    },
+    "shareable_receipt": "string"
+  },
+  "example_response": {
+    "mode": "valentine",
+    "topic": "Should couples celebrate monthly anniversaries?",
+    "status": "introduction",
+    "round": 1,
+    "total_rounds": 3,
+    "introduction": "Ladies and gentlemen, hopeful hearts and skeptical souls, welcome to tonight's passionate face-off! In the rose-tinted corner, The Hopeless Romantic swears that every month deserves a bouquet and a candlelit memory. Across the divide, The Practical Partner brandishes logic and a minimalist calendar, questioning if such frequent festivities lose their meaning. Tonight they clash on: Should couples celebrate monthly anniversaries? Let the sparks begin!",
+    "debater_a": {
+      "name": "The Hopeless Romantic",
+      "argument": "Monthly anniversaries are tiny milestones\u2014a chance to pause, reflect, and nurture the bond with spontaneous joy. Each month is unique! Why save celebration for just once a year when love grows, shifts, and deserves recognition every turn of the calendar? Little acts of remembrance can make everyday love truly extraordinary.",
+      "key_points": [
+        "Love thrives on ritual and gratitude",
+        "Small celebrations reinforce appreciation and effort"
+      ],
+      "emotion_level": 8
+    },
+    "debater_b": {
+      "name": "The Practical Partner",
+      "argument": "Constant celebrations risk diluting the importance of the big moments. Fueling expectations every month adds unnecessary pressure, potentially turning joy into obligation. True love is built on daily respect, not a monthly schedule. Let real milestones shine by reserving celebration for the truly special occasions!",
+      "rebuttals": [
+        "Frequency cheapens impact",
+        "Can cause gift fatigue and stress"
+      ],
+      "emotion_level": 6
+    },
+    "round_summary": "The Hopeless Romantic swept the stage with poetic passion for monthly meaning, but The Practical Partner\u2019s level-headed approach highlighted the hazards of inflationary intimacy. The crowd\u2019s mood is split between longing and logic!",
+    "verdict": {
+      "winner": "The Practical Partner",
+      "reasoning": "While emotions ran high, The Practical Partner presented a more sustainable vision for love and celebration, persuading the crowd that less can be more in matters of the heart.",
+      "final_score": "7-5",
+      "audience_takeaway": "Balance ritual with meaning. Celebrate often\u2014but not out of obligation!"
+    },
+    "shareable_receipt": "Debate: Should couples celebrate monthly anniversaries?\n\nHopeless Romantic: Monthly joy brings extra magic!\nPractical Partner: Save it for what truly counts.\n\nWinner: Practical Partner (7-5). Insight: Celebration should spark joy\u2014not stress!"
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-09T08:36:08.241678",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "mode": "valentine",
+    "topic": "Should couples celebrate monthly anniversaries?",
+    "status": "introduction",
+    "round": 1,
+    "total_rounds": 3,
+    "introduction": "Ladies and gentlemen, hopeful hearts and skeptical souls, welcome to tonight's passionate face-off! In the rose-tinted corner, The Hopeless Romantic swears that every month deserves a bouquet and a candlelit memory. Across the divide, The Practical Partner brandishes logic and a minimalist calendar, questioning if such frequent festivities lose their meaning. Tonight they clash on: Should couples celebrate monthly anniversaries? Let the sparks begin!",
+    "debater_a": {
+      "name": "The Hopeless Romantic",
+      "argument": "Monthly anniversaries are tiny milestones\u2014a chance to pause, reflect, and nurture the bond with spontaneous joy. Each month is unique! Why save celebration for just once a year when love grows, shifts, and deserves recognition every turn of the calendar? Little acts of remembrance can make everyday love truly extraordinary.",
+      "key_points": [
+        "Love thrives on ritual and gratitude",
+        "Small celebrations reinforce appreciation and effort"
+      ],
+      "emotion_level": 8
+    },
+    "debater_b": {
+      "name": "The Practical Partner",
+      "argument": "Constant celebrations risk diluting the importance of the big moments. Fueling expectations every month adds unnecessary pressure, potentially turning joy into obligation. True love is built on daily respect, not a monthly schedule. Let real milestones shine by reserving celebration for the truly special occasions!",
+      "rebuttals": [
+        "Frequency cheapens impact",
+        "Can cause gift fatigue and stress"
+      ],
+      "emotion_level": 6
+    },
+    "round_summary": "The Hopeless Romantic swept the stage with poetic passion for monthly meaning, but The Practical Partner\u2019s level-headed approach highlighted the hazards of inflationary intimacy. The crowd\u2019s mood is split between longing and logic!",
+    "verdict": {
+      "winner": "The Practical Partner",
+      "reasoning": "While emotions ran high, The Practical Partner presented a more sustainable vision for love and celebration, persuading the crowd that less can be more in matters of the heart.",
+      "final_score": "7-5",
+      "audience_takeaway": "Balance ritual with meaning. Celebrate often\u2014but not out of obligation!"
+    },
+    "shareable_receipt": "Debate: Should couples celebrate monthly anniversaries?\n\nHopeless Romantic: Monthly joy brings extra magic!\nPractical Partner: Save it for what truly counts.\n\nWinner: Practical Partner (7-5). Insight: Celebration should spark joy\u2014not stress!"
+  }
+}

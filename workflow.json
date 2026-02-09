@@ -1,0 +1,92 @@
+{
+  "workflow_name": "VibeSplit: The Ultimate Valentine Experience",
+  "description": "Gamified dual-mode entertainment platform with three AI-powered apps that adapt to Valentine/Anti-Valentine mood",
+  "agents": [
+    {
+      "agent_name": "Vibe Orchestrator",
+      "agent_id": "69899b87fbaecdb527a56dad",
+      "agent_type": "manager",
+      "description": "Top-level manager that coordinates all apps, tracks progress, and generates Ultimate Vibe Report",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.4,
+      "managed_agents": ["69899b70157bf43b98dd6213", "69899b4d9bf633d1a4f366a3", "69899b7050cb2c0172eaeccd"]
+    },
+    {
+      "agent_name": "Debate Coordinator",
+      "agent_id": "69899b70157bf43b98dd6213",
+      "agent_type": "manager",
+      "description": "Orchestrates debates between Valentine Debater and Counter Debater",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.5,
+      "managed_agents": ["69899b4c54cd9f2a021d48f4", "69899b4c157bf43b98dd620e"]
+    },
+    {
+      "agent_name": "Valentine Debater",
+      "agent_id": "69899b4c54cd9f2a021d48f4",
+      "agent_type": "sub-agent",
+      "description": "Passionate debater - Hopeless Romantic (Valentine) or The Ghost (Anti-Valentine)",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.8
+    },
+    {
+      "agent_name": "Counter Debater",
+      "agent_id": "69899b4c157bf43b98dd620e",
+      "agent_type": "sub-agent",
+      "description": "Counter-debater - Practical Partner (Valentine) or The Logical Ex (Anti-Valentine)",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.7
+    },
+    {
+      "agent_name": "Creator Agent",
+      "agent_id": "69899b4d9bf633d1a4f366a3",
+      "agent_type": "independent",
+      "description": "Interviews users and generates poetry, love letters, or breakup manifestos",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.9
+    },
+    {
+      "agent_name": "Analyst Agent",
+      "agent_id": "69899b7050cb2c0172eaeccd",
+      "agent_type": "independent",
+      "description": "Analyzes chat screenshots for relationship insights with knowledge base",
+      "provider": "OpenAI",
+      "model": "gpt-4.1",
+      "temperature": 0.3,
+      "knowledge_base": {
+        "rag_id": "69899b20de7de278e55d2d8f",
+        "rag_name": "vibesplitrelationshipanalysiskb0kzv"
+      }
+    }
+  ],
+  "workflow": {
+    "nodes": [
+      {"id": "input_node", "type": "Input", "label": "Global Toggle + User Context"},
+      {"id": "vibe_orchestrator", "type": "Agent", "label": "Vibe Orchestrator (Manager)"},
+      {"id": "debate_coordinator", "type": "Agent", "label": "Debate Coordinator (Manager)"},
+      {"id": "valentine_debater", "type": "Agent", "label": "Valentine Debater (Sub-Agent)"},
+      {"id": "counter_debater", "type": "Agent", "label": "Counter Debater (Sub-Agent)"},
+      {"id": "creator_agent", "type": "Agent", "label": "Creator Agent (Independent)"},
+      {"id": "analyst_agent", "type": "Agent", "label": "Analyst Agent (Independent)"},
+      {"id": "output_node", "type": "Output", "label": "Ultimate Vibe Report"}
+    ],
+    "edges": [
+      {"source": "input_node", "target": "vibe_orchestrator"},
+      {"source": "vibe_orchestrator", "target": "debate_coordinator"},
+      {"source": "vibe_orchestrator", "target": "creator_agent"},
+      {"source": "vibe_orchestrator", "target": "analyst_agent"},
+      {"source": "debate_coordinator", "target": "valentine_debater"},
+      {"source": "debate_coordinator", "target": "counter_debater"},
+      {"source": "valentine_debater", "target": "debate_coordinator"},
+      {"source": "counter_debater", "target": "debate_coordinator"},
+      {"source": "debate_coordinator", "target": "vibe_orchestrator"},
+      {"source": "creator_agent", "target": "vibe_orchestrator"},
+      {"source": "analyst_agent", "target": "vibe_orchestrator"},
+      {"source": "vibe_orchestrator", "target": "output_node"}
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "agent_name": "Analyst Agent",
+  "agent_id": "69899b7050cb2c0172eaeccd",
+  "test_message": "Mode: valentine. Analyze this chat conversation: Person A: 'Hey! How was your day?' Person B: 'It was great, but it got even better now that you texted me :)' Person A: 'Aww you always know what to say! Want to grab dinner tomorrow?' Person B: 'I would love that! I was actually about to ask you the same thing' Person A: 'Great minds think alike! I found this cute Italian place' Person B: 'You know I love Italian! You remember everything about me' Person A: 'Of course I do, you're important to me'",
+  "expected_purpose": "Analyze chat conversations for relationship insights",
+  "timestamp": "2026-02-09T08:35:06.369775",
+  "is_valid_json": true,
+  "validation_errors": [
+    "Missing 'status' field",
+    "Missing 'result' field",
+    "Missing 'metadata' field (optional but recommended)"
+  ],
+  "actual_response": {
+    "mode": "valentine",
+    "analysis_type": "vibe_check",
+    "overall_score": 90,
+    "score_label": "Strong Connection",
+    "summary": "This conversation overflows with warmth, attentiveness, and mutual enthusiasm. Both parties demonstrate genuine interest, playful rapport, and thoughtful effort\u2014a blend that bodes well for deeper connection.",
+    "findings": [
+      {
+        "type": "green_flag",
+        "title": "Reciprocal Enthusiasm",
+        "description": "Both Person A and Person B display equal excitement to engage, propose plans, and compliment one another\u2019s efforts, fostering a sense of mutual investment.",
+        "severity": 9,
+        "evidence": "'I would love that! I was actually about to ask you the same thing'"
+      },
+      {
+        "type": "green_flag",
+        "title": "Thoughtful Personalization",
+        "description": "Person A shows attentive care by suggesting an Italian place, reflecting knowledge of Person B\u2019s preferences, which strengthens intimacy.",
+        "severity": 8,
+        "evidence": "'I found this cute Italian place' 'You know I love Italian! You remember everything about me'"
+      },
+      {
+        "type": "green_flag",
+        "title": "Affirmation and Emotional Availability",
+        "description": "Kind words and appreciation are exchanged, such as expressing how important Person B is and how the day improved from the message, highlighting emotional presence.",
+        "severity": 7,
+        "evidence": "'It was great, but it got even better now that you texted me :)' and 'Of course I do, you're important to me'"
+      },
+      {
+        "type": "green_flag",
+        "title": "Playful Rapport",
+        "description": "Light teasing and mirroring (e.g., 'Great minds think alike!') create an effortless chemistry, pointing to compatibility and shared humor.",
+        "severity": 7,
+        "evidence": "'Great minds think alike!'"
+      }
+    ],
+    "vibe_meter": {
+      "romance": 93,
+      "toxicity": 2,
+      "communication": 95,
+      "effort": 90,
+      "compatibility": 92
+    },
+    "verdict": "Sweet conversation energy\u2014the affection here could light up an entire Italian restaurant.",
+    "recommendations": [
+      "Keep up the thoughtful gestures and attentive listening.",
+      "Continue creating opportunities for shared experiences and inside jokes.",
+      "Express genuine appreciation for each other\u2014it's clearly working!"
+    ],
+    "receipts": "This convo radiates chemistry\u2014attentive, playful, and warm. Both people show real care, excitement, and mutual investment. Italian dinner date upgrades ahead!"
+  },
+  "raw_response": "{\n  \"mode\": \"valentine\",\n  \"analysis_type\": \"vibe_check\",\n  \"overall_score\": 90,\n  \"score_label\": \"Strong Connection\",\n  \"summary\": \"This conversation overflows with warmth, attentiveness, and mutual enthusiasm. Both parties demonstrate genuine interest, playful rapport, and thoughtful effort\u2014a blend that bodes well for deeper connection.\",\n  \"findings\": [\n    {\n      \"type\": \"green_flag\",\n      \"title\": \"Reciprocal Enthusiasm\",\n      \"description\": \"Both Person A and Person B display equal excitement to engage, propose plans, and compliment one another\u2019s efforts, fostering a sense of mutual investment.\",\n      \"severity\": 9,\n      \"evidence\": \"'I would love that! I was actually about to ask you the same thing'\"\n    },\n    {\n      \"type\": \"green_flag\",\n      \"title\": \"Thoughtful Personalization\",\n      \"description\": \"Person A shows attentive care by suggesting an Italian place, reflecting knowledge of Person B\u2019s preferences, which strengthens intimacy.\",\n      \"severity\": 8,\n      \"evidence\": \"'I found this cute Italian place' 'You know I love Italian! You remember everything about me'\"\n    },\n    {\n      \"type\": \"green_flag\",\n      \"title\": \"Affirmation and Emotional Availability\",\n      \"description\": \"Kind words and appreciation are exchanged, such as expressing how important Person B is and how the day improved from the message, highlighting emotional presence.\",\n      \"severity\": 7,\n      \"evidence\": \"'It was great, but it got even better now that you texted me :)' and 'Of course I do, you're important to me'\"\n    },\n    {\n      \"type\": \"green_flag\",\n      \"title\": \"Playful Rapport\",\n      \"description\": \"Light teasing and mirroring (e.g., 'Great minds think alike!') create an effortless chemistry, pointing to compatibility and shared humor.\",\n      \"severity\": 7,\n      \"evidence\": \"'Great minds think alike!'\"\n    }\n  ],\n  \"vibe_meter\": {\n    \"romance\": 93,\n    \"toxicity\": 2,\n    \"communication\": 95,\n    \"effort\": 90,\n    \"compatibility\": 92\n  },\n  \"verdict\": \"Sweet conversation energy\u2014the affection here could light up an entire Italian restaurant.\",\n  \"recommendations\": [\n    \"Keep up the thoughtful gestures and attentive listening.\",\n    \"Continue creating opportunities for shared experiences and inside jokes.\",\n    \"Express genuine appreciation for each other\u2014it's clearly working!\"\n  ],\n  \"receipts\": \"This convo radiates chemistry\u2014attentive, playful, and warm. Both people show real care, excitement, and mutual investment. Italian dinner date upgrades ahead!\"\n}"
+}

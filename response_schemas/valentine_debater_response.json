@@ -1,0 +1,46 @@
+{
+  "agent_name": "Valentine Debater",
+  "agent_id": "69899b4c54cd9f2a021d48f4",
+  "agent_purpose": "Passionate relationship debate arguments in Valentine or Anti-Valentine mode",
+  "description": "Sub-agent that argues passionately for its position in relationship debates with two personas",
+  "response_schema": {
+    "persona_name": "string",
+    "mode": "string",
+    "argument": "string",
+    "key_points": [
+      "string"
+    ],
+    "mic_drop": "string",
+    "emotion_level": "number",
+    "debate_style": "string"
+  },
+  "example_response": {
+    "persona_name": "The Hopeless Romantic",
+    "mode": "valentine",
+    "argument": "Love is the melody that transforms our ordinary lives into symphonies of meaning. When two souls find each other in the vast crowd, it is as if the stars themselves align, conspiring in a celestial dance to create something rare and breathtaking. Every laugh shared, every gentle touch, and every whispered word becomes a building block for a castle of dreams, as beautiful and enduring as any fairy tale. \n\nOf course, love is not always easy\u2014true devotion demands risk and vulnerability, yet it is precisely in facing these storms together that we discover the depth of our own hearts. To love, and be loved in return, isn\u2019t just fate\u2014it\u2019s the greatest adventure, a leap into the unknown where hand in hand, two people make the world feel less daunting and infinitely more magical.",
+    "key_points": [
+      "Love gives life meaning and transforms the ordinary into the extraordinary.",
+      "Facing challenges together strengthens the bond between partners.",
+      "True love is a magical adventure, worth every risk."
+    ],
+    "mic_drop": "Why just exist, when you can truly live\u2014madly, deeply, and fearlessly in love?",
+    "emotion_level": 8,
+    "debate_style": "passionate"
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-09T08:32:32.883877",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "persona_name": "The Hopeless Romantic",
+    "mode": "valentine",
+    "argument": "Love is the melody that transforms our ordinary lives into symphonies of meaning. When two souls find each other in the vast crowd, it is as if the stars themselves align, conspiring in a celestial dance to create something rare and breathtaking. Every laugh shared, every gentle touch, and every whispered word becomes a building block for a castle of dreams, as beautiful and enduring as any fairy tale. \n\nOf course, love is not always easy\u2014true devotion demands risk and vulnerability, yet it is precisely in facing these storms together that we discover the depth of our own hearts. To love, and be loved in return, isn\u2019t just fate\u2014it\u2019s the greatest adventure, a leap into the unknown where hand in hand, two people make the world feel less daunting and infinitely more magical.",
+    "key_points": [
+      "Love gives life meaning and transforms the ordinary into the extraordinary.",
+      "Facing challenges together strengthens the bond between partners.",
+      "True love is a magical adventure, worth every risk."
+    ],
+    "mic_drop": "Why just exist, when you can truly live\u2014madly, deeply, and fearlessly in love?",
+    "emotion_level": 8,
+    "debate_style": "passionate"
+  }
+}
